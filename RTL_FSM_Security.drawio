@@ -4,8 +4,31 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Cws42EZEmjPFbKZNpQGd-1" value="&lt;font size=&quot;3&quot;&gt;case(state, IP, OP)&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ARMED, 0101, 000 -&amp;gt; ARMED&lt;/div&gt;&lt;div&gt;ARMED, 0111, 000 -&amp;gt; ALARM&lt;/div&gt;&lt;div&gt;ARMED, 1001, 000-&amp;gt; UNLOCKED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ALARM, 0111, 001-&amp;gt; ALARM&lt;/div&gt;&lt;div&gt;ALARM, 0110, 001 -&amp;gt; ARMED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;UNLOCKED, 1001, 110 -&amp;gt; OCCUPIED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;OCCUPIED, 1011, 100-&amp;gt; OCCUPIED&lt;/div&gt;&lt;div&gt;OCCUPIED, 1001, 100, LOCKED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;LOCKED, 100, 010 -&amp;gt; ARMED&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="210" width="400" height="460" as="geometry" />
+        <mxCell id="Cws42EZEmjPFbKZNpQGd-1" value="&lt;div&gt;&lt;font size=&quot;3&quot;&gt;// IP: {key_correct, key_incorrect, door_open, n_rst}&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;//OP: {unlockdoor, toggle_en, alarm}&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font size=&quot;3&quot;&gt;case(state, IP, OP)&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ARMED, 0101, 000 -&amp;gt; ARMED&lt;/div&gt;&lt;div&gt;ARMED, 0111, 000 -&amp;gt; ALARM&lt;/div&gt;&lt;div&gt;ARMED, 1001, 000-&amp;gt; UNLOCKED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ALARM, 0111, 001-&amp;gt; ALARM&lt;/div&gt;&lt;div&gt;ALARM, 0110, 001 -&amp;gt; ARMED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;UNLOCKED, 1001, 110 -&amp;gt; OCCUPIED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;OCCUPIED, 1011, 100-&amp;gt; OCCUPIED&lt;/div&gt;&lt;div&gt;OCCUPIED, 1001, 100, LOCKED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;LOCKED, 100, 010 -&amp;gt; ARMED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;default: -&amp;gt;ARMED&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="400" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Cws42EZEmjPFbKZNpQGd-3" value="3ff" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="200" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Cws42EZEmjPFbKZNpQGd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.007;entryY=0.442;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Cws42EZEmjPFbKZNpQGd-1" target="Cws42EZEmjPFbKZNpQGd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cws42EZEmjPFbKZNpQGd-6" value="{n_state, OP}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="330" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Cws42EZEmjPFbKZNpQGd-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="320" as="sourcePoint" />
+            <mxPoint x="290" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="320" />
+              <mxPoint x="950" y="40" />
+              <mxPoint x="290" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cws42EZEmjPFbKZNpQGd-9" value="state" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="890" y="320" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
